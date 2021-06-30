@@ -87,7 +87,8 @@ window.onscroll = function(){
 		}
 	}
 }
-ham.onclick = function(){
+ham.onclick = function(event){
+	event.preventDefault();
 	if (flag == 0) {
 		two.style.cssText = "opacity:0;"
 		one.style.cssText = "transform: rotate(40deg);position:absolute;top:.5px;"
@@ -99,7 +100,7 @@ ham.onclick = function(){
 			list.style.cssText = "height:20rem;"
 		}
 		anchors.forEach(function(current){
-			current.style.cssText = "opacity:1;transition:opacity .5s .25s;"
+			current.style.cssText = "opacity:1;transition:opacity .5s .25s;right:0;"
 		});
 		flag = 1;
 	}
@@ -117,7 +118,7 @@ ham.onclick = function(){
 			list.style.cssText = "height:0;"
 		}
 		anchors.forEach(function(current){
-			current.style.cssText = "opacity:0;transition:opacity .1s;"
+			current.style.cssText = "opacity:0;right:100vw;transition:opacity .1s,right .1s .2s;"
 		});
 		flag = 0;	
 	}

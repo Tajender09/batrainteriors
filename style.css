@@ -236,7 +236,7 @@ h1,h2{
 	color: #fff;
 }
 #about{
-	padding-top: 7rem;
+	margin-top: 7rem;
 	display: flex;
 }
 #about img{
@@ -268,7 +268,7 @@ h1,h2{
 	color: #6f6f6f;
 }
 #services{
-	padding-top: 7rem;
+	margin-top: 7rem;
 	display: flex;
 }
 #services > div{
@@ -414,7 +414,7 @@ h1,h2{
 	top: -4rem;
 	left: 1.5rem;
 	color: #fff;
-	z-index: 3;
+	z-index: 2;
 	transition: top .7s;
 }
 .txt h3{
@@ -429,7 +429,7 @@ h1,h2{
 	bottom: -3.1rem;
 	left: 1.6rem;
 	color: #fff;
-	z-index: 3;
+	z-index: 2;
 	border: 1px solid #fff;
 	padding: 14px;
 	border-radius: 50%;
@@ -552,6 +552,9 @@ textarea{
 	width: 100%;
 	background-color: #000;
 	opacity: 0.5;
+}
+.map:hover:before{
+	display: none;
 }
 footer{
 	background-color: #252531;
@@ -713,7 +716,9 @@ footer a{
 		color: #fff;
 		display: block;
 		padding-top: 1.2rem;
-		opacity: 0; 
+		opacity: 0;
+		position: relative;
+		right: 100vw;
 	}
 	.ham a:first-of-type{
 		padding-top: 5rem;
@@ -769,7 +774,7 @@ footer a{
 		font-size: 1.5rem;
 		background-color: #000;
 		padding: 1rem;
-		top: 52%;
+		top: 40%;
 	}
 	#services > i:first-of-type{
 		left: 0;
@@ -871,9 +876,9 @@ footer a{
 	}
 }
 @media all and (min-width: 481px) and (max-width: 768px){
-	/*body{
+	body{
 		overflow-x: hidden;
-	}*/
+	}
 	nav > ul{
 		display: none;
 	}
@@ -908,6 +913,7 @@ footer a{
 		padding-top: 1.5rem;
 		font-size: 1.2rem;
 		opacity: 0;
+		width: 0;
 	}
 	.ham a:first-of-type{
 		padding-top: 5rem;
@@ -952,6 +958,7 @@ footer a{
 	}
 	#services{
 		width: 200%;
+		position: relative;
 	}
 	#services > div{
 		width: 50%;
@@ -964,13 +971,13 @@ footer a{
 		font-size: 1.5rem;
 		background-color: #000;
 		padding: 1rem;
-		top: 40%''
+		top: 40%;
 	}
 	#services > i:first-of-type{
 		left: 0;
 	}
 	#services > i:last-of-type{
-		right: 0;
+		right: 100vw;
 	}
 	#projects > div{
 		flex-direction: column;
