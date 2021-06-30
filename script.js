@@ -101,6 +101,21 @@ ham.onclick = function(event){
 		}
 		anchors.forEach(function(current){
 			current.style.cssText = "opacity:1;transition:opacity .5s .25s;right:0;"
+			current.onclick = function(){
+				two.style.cssText = "opacity:1;"
+				one.style.cssText = "transform: rotate(0deg);"
+				three.style.cssText = "transform: rotate(0deg);"
+				if (size.matches) {
+					list.style.cssText = "height:6.3rem;"
+				}
+				else{
+					list.style.cssText = "height:5.5rem;"
+				}
+				anchors.forEach(function(current){
+					current.style.cssText = "opacity:0;right:100vw;transition:opacity .1s,right .1s .2s;"
+				});
+				flag = 0;		
+			}
 		});
 		flag = 1;
 	}
