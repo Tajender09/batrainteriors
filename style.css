@@ -913,6 +913,8 @@ footer a{
 		padding-top: 1.5rem;
 		font-size: 1.2rem;
 		opacity: 0;
+		position: relative;
+		right: 100vw;
 	}
 	.ham a:first-of-type{
 		padding-top: 5rem;
