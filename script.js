@@ -22,7 +22,7 @@ let j = 1;
 window.onload = function(){
 	preloader.style.cssText = "animation-name: up;height:0;"
 	gif.style.cssText = "animation-name: img;height:0;transition:height 2s;"
-	body.style.cssText = "overflow:initial;"
+	body.style.cssText = "overflow-y:initial;"
 }
 click.forEach(function(current,index){
 	current.onclick = function(){
