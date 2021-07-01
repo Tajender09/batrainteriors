@@ -1,3 +1,6 @@
+let loader = document.querySelector("#preloader");
+let gif = document.querySelector("#preloader > img");
+let body = document.querySelector("body");
 let banner = document.querySelector(".home1");
 let click = document.querySelectorAll(".home-img > div");
 let navbar = document.querySelector("nav");
@@ -16,6 +19,11 @@ let wid = 100;
 let flag = 0; 
 let i = 2;
 let j = 1;
+window.onload = function(){
+	preloader.style.cssText = "animation-name: up;height:0;"
+	gif.style.cssText = "animation-name: img;height:0;transition:height 2s;"
+	body.style.cssText = "overflow:initial;"
+}
 click.forEach(function(current,index){
 	current.onclick = function(){
 		click.forEach(function(current){

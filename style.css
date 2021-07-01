@@ -4,6 +4,42 @@
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
 }
+body{
+	overflow-y: hidden;
+}
+#preloader{
+	height: 100vh;
+	width: 100vw;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	z-index: 9999; 
+	animation-duration: 2s;
+}
+#preloader > img{
+	animation-duration: 2s;
+}
+@keyframes up{
+	0%{
+		height: 100%;
+	}
+	100%{
+		height: 0;
+	}
+}
+@keyframes img{
+	0%{
+		opacity: 1;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 0;
+	}
+}
 .ham{
 	display: none;
 }
@@ -913,7 +949,8 @@ footer a{
 		padding-top: 1.5rem;
 		font-size: 1.2rem;
 		opacity: 0;
-		width: 0;
+		position: relative;
+		right: 100vw;
 	}
 	.ham a:first-of-type{
 		padding-top: 5rem;
