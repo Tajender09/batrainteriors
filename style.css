@@ -376,10 +376,7 @@ h1,h2{
 	padding: 5rem 0;
 	background-color: #f7f7f7;
 }
-#projects {
-	display: none;
-}
-#projects > div{
+/* #projects > div{
 	display: flex;
 }
 .img1, .img2{
@@ -415,7 +412,7 @@ h1,h2{
 .sec3{
 	margin-top: -19.55rem;
 	margin-right: 1px;
-}
+} */
 #projects div img{
 	width: 100%;
 	height: 100%;
@@ -424,6 +421,7 @@ h1,h2{
 #projects > div > div{
 	overflow: hidden;
 	position: relative;
+	height: 100%;
 }
 #projects > div > div:hover .txt{
 	top: 1.5rem;
@@ -459,7 +457,7 @@ h1,h2{
 .txt h3{
 	line-height: 1.5;
 }
-.sec4 .txt{
+#sec8 .txt, #sec7 .txt{
 	top: -6.4rem;
 }
 .icon{
@@ -481,6 +479,43 @@ h1,h2{
     color: rgba(255, 255, 255, 0.8);
     margin-bottom: 5px;
     margin-left: 2px;
+} 
+
+#projects{
+	width: 100%;
+	display: grid;
+	grid-template-areas: 
+    'honda jnu sv sv'
+    'honda lnmiit lnmiit jagatpura'
+    'hyundai hyundai hyundai jagatpura'
+    'med med jeep jeep';
+}
+.grid-item{
+	width: 100%;
+}
+#sec1{
+    grid-area: honda;
+}
+#sec2{
+    grid-area: jnu;
+}
+#sec3{
+    grid-area: sv;
+}
+#sec4{
+    grid-area: lnmiit;
+}
+#sec5{
+    grid-area: jagatpura;
+}
+#sec6{
+    grid-area: hyundai;
+}
+#sec7{
+    grid-area: med;
+}
+#sec8{
+    grid-area: jeep; 
 }
 .gallery{
 	display: none;
@@ -821,7 +856,8 @@ footer a{
 	#services > i:last-of-type{
 		right: 300vw;
 	}
-	#projects > div{
+	#projects{
+		display: flex;
 		flex-direction: column;
 	}
 	.img1, .img2, .img3, .img7, .img8, .img4, .img5, .img6{
@@ -1019,7 +1055,8 @@ footer a{
 	#services > i:last-of-type{
 		right: 100vw;
 	}
-	#projects > div{
+	#projects{
+		display: flex;
 		flex-direction: column;
 	}
 	.img1, .img2, .img3, .img7, .img8, .img4, .img5, .img6{
@@ -1136,22 +1173,19 @@ footer a{
 	#about div p{
 		line-height: 1.6;
 	}
+	.txt{
+		left: 1.1rem;
+		top: -5rem;
+	}
+	.txt h3{
+		line-height: 1.3;
+	}
+	#sec3 div .txt, #sec5 div .txt{
+		left: 1.1rem;
+		top: -7rem;
+	}
 	.box{
 		height: 20rem;
-	}
-	.sec1, .sec2, .sec3, .sec4{
-		margin: 0;
-	}
-	.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8{
-		margin: 0;
-	}
-	.sec2{
-		margin-top: -16.37rem;
-		margin-left: 25%;
-		width: 100%;
-	}
-	.sec3{
-		margin-top: -16.38rem;
 	}
 	footer > div{
 		flex-wrap: wrap;
