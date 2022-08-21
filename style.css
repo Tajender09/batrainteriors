@@ -376,6 +376,9 @@ h1,h2{
 	padding: 5rem 0;
 	background-color: #f7f7f7;
 }
+#projects {
+	display: none;
+}
 #projects > div{
 	display: flex;
 }
